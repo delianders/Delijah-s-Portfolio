@@ -2,36 +2,50 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Delijah's Portfolio</title>
-        <meta name="author" content="Delijah Anderson">
-        <meta name="description" content="Delijah's personal website to showcase her work">
 
         <!--link to make responsive-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Delijah's Portfolio</title>
+        <meta name="author" content="Delijah Anderson">
+        <meta name="description" content="Delijah's personal website to showcase her work">
 
         <!--fonts-->
         <!--stylesheet-->
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div id="greenbackground">
         <header>
-            <nav class="homenavigation">
+            <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="work.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">home.</a></li>
+                    <li><a href="#projects_html">projects.</a></li>
+                    <li><a href="about.html">about.</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <h1>My name is delijah.</h1>
-            <p class="jobtitle">human factors engineer | user experience</p>
-            <p class="bio">A <i>creative</i> student that studies the integration </p>
-            <p class="bio2">of psychology and technology. </p>
-            <button type="button" class="email"><a href="mailto: delijahneanderson@gmail.com">email me</a></button>
+            <section class="bio_html">
+                <h1>my name is delijah.</h1>
+                <p>human factors engineer | user experience</p>
+                <p>A <i>creative</i> student that studies the integration of psychology and technology. </p>
+                <a href="mailto:delijahneanderson@gmail.com" class="email_html">Email.</a>
+            </section>
+            <section class="projects_html">
+                <h2>Check out my projects below.</h2>
+                <section id="dutchbros">
+                    <h3>Dutch Bros.</h3>
+                    <p>UX design</p>
+                    <p>A re-design of Dutch Bros interface based on user research.</p>
+                    <a href="#" target="_blank">Case Study</a>
+                </section>
+                <section id="food_insecurity">
+                    <h3>Food Insecurity App</h3>
+                    <p>UX design</p>
+                    <p>An app for students who identify with not having food resources.</p>
+                    <a href="#" target="_blank">Case Study</a>
+                </section>
+            </section>
         </main>
-        </div>
         <footer>
         </footer>
     </body>
