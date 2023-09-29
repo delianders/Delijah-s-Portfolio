@@ -1,9 +1,110 @@
+/* Global Styles/ X-Small Screen Styles*/
 :root{
     --green: #96A289;
     --orange: #EAB676;
     --pink: #C29696;
     --gray: #353434;
     --white: #fff;
-    --name-font: font-family: 'Source Code Pro', monospace;
-    --font: font-family: 'Quicksand', sans-serif;
+    --name-font: 'Source Code Pro', monospace;
+    --font: 'Quicksand', sans-serif;
 }
+
+body{
+    line-height: 1.5;
+}
+
+/*Button & Link Styles */
+.button_style {
+    border: 2px solid var(--pink);
+    padding: 10px;
+    text-decoration: none;
+    color: var(--pink);
+    border-radius: 30px;
+    font-weight: 525;
+    cursor: pointer;
+    font-family: var(--font);
+}
+
+.button_style:hover {
+    color: white;
+    background-color: var(--pink);
+    border-color: var(--white);
+}
+
+.links {
+    text-decoration: underline;
+    padding: 1rem;
+    color: var(--green);
+    margin-top: 2rem;
+}
+
+.links:hover{
+    text-decoration: underline;
+    padding: 1rem;
+    color: var(--orange);
+}
+
+/* Navigation styles */
+nav a{
+    text-decoration: none; 
+    color: var(--green);
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    text-align: right;
+}
+
+nav li{
+    list-style-type: none;
+    font-size: 1.5rem;
+    font-family: var(--font);
+}
+
+nav a:hover{
+    color: var(--orange);
+    border-bottom: 4px solid var(--orange);
+}
+
+nav a:active {
+    color: 4px solid var(--orange);
+}
+
+nav a:visited {
+    color: 4px solid var(--orange);
+}
+
+/*Heading styles */
+h1, h2, h3 {
+    font-weight: 550;
+}
+
+h2, h3, p {
+    font-family: var(--font);
+}
+
+h1 {
+    font-family: var(--name-font);
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1.2rem;
+}
+
+/* Responsive Styles*/
+/* Small Screen Styles */
+@media screen and(min-width: 375px){
+    nav a{
+        text-align: center;
+        padding: 0;
+        margin: 0 auto;
+    }
+}
+    
