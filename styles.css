@@ -4,29 +4,82 @@
     --orange: #EAB676;
     --pink: #C29696;
     --gray: #353434;
-    --white: #fff;
+    --white: #FDFAFA;
     --name-font: 'Source Code Pro', monospace;
     --font: 'Quicksand', sans-serif;
+    --chalk: 'Chalkduster', fantasy;
 }
 
 body{
     line-height: 1.5;
+    width: 1280px;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: #fdfafa;
+    background-image: url("https://www.transparenttextures.com/patterns/connected.png");
+}
+
+#header-index{
+    background-color: var(--green);
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    height: 525px;
+    /* box-shadow: 30px 15px var(--pink); */
+    border: 3px solid var(--gray);
+    box-shadow: 15px 20px var(--pink);
+
+}
+
+header p, header h1{
+    color: var(--white);
+}
+
+header p:nth-child(3){
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    font-size: 32px;
+}
+
+header p:first-of-type{
+    font-size: 24px;
+}
+
+header h1{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 48px;
+}
+
+span{
+    opacity: 0.7;
+    font-family: Chalkduster, fantasy;
+}
+
+header span:hover, header i:hover{
+    color: var(--gray)
+}
+
+span{
+    font-style: italic;
+    color: var(--orange);
 }
 
 /*Button & Link Styles */
 .button_style {
     border: 2px solid var(--pink);
-    padding: 10px;
+    padding: 15px 60px 15px 60px;
     text-decoration: none;
     color: var(--pink);
-    border-radius: 30px;
+    border-radius: 15px;
     font-weight: 525;
     cursor: pointer;
     font-family: var(--font);
+    background-color: var(--white);
+    font-size: 24px;
 }
 
 .button_style:hover {
-    color: white;
+    color: var(--white);
     background-color: var(--pink);
     border-color: var(--white);
 }
@@ -45,35 +98,33 @@ body{
 }
 
 /* Navigation styles */
+nav{
+    display: flex;
+    justify-content: center;
+}
+
 nav a{
     text-decoration: none; 
-    color: var(--green);
+    color: var(--white);
     padding: 1rem;
     margin: 0.5rem;
 }
 
-nav ul {
+nav ul{
+    padding: 0;
     display: flex;
-    text-align: right;
 }
 
 nav li{
     list-style-type: none;
     font-size: 1.5rem;
     font-family: var(--font);
+    margin-right: 20px;
 }
 
 nav a:hover{
     color: var(--orange);
     border-bottom: 4px solid var(--orange);
-}
-
-nav a:active {
-    color: 4px solid var(--orange);
-}
-
-nav a:visited {
-    color: 4px solid var(--orange);
 }
 
 /*Heading styles */
@@ -87,24 +138,327 @@ h2, h3, p {
 
 h1 {
     font-family: var(--name-font);
-    font-size: 2rem;
+    text-align: center;
 }
 
 h2 {
     font-size: 1.5rem;
+    color: var(--gray);
 }
 
 h3{
     font-size: 1.2rem;
 }
 
-/* Responsive Styles*/
-/* Small Screen Styles */
-@media screen and(min-width: 375px){
-    nav a{
-        text-align: center;
-        padding: 0;
-        margin: 0 auto;
+.head-titles{
+    background-color: var(--orange);
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 640px;
+    box-shadow: 3px 5px gray;
+    border: 2px solid var(--gray);
+}
+
+/* Header Section */
+.bio_html{
+    align-items: center;
+}
+
+.headerimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotateImage 3s linear infinite alternate; 
+}
+
+@keyframes rotateImage {
+    0% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(15deg);
     }
 }
-    
+
+/* PROJECTS Section */
+#eta_care, #dutchbros, #saatchi{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 60px;
+}
+
+#projects_html img{
+    margin-right: 20px;
+    padding-left: 100px;
+    padding: 20px;
+    border-radius: 30px;
+    border: 3px solid var(--green);
+    box-shadow: 3px 5px 5px var(--gray);
+}
+
+#eta_care{
+    /* background-color: #9CCBDA; */
+    border-radius: 15px;
+}
+
+#dutchbros{
+    /* background-color: #F8B35B; */
+    border-radius: 15px;
+}
+
+#saatchi{
+    /* background-color: #809780; */
+    border-radius: 15px;
+}
+
+#dutchbros div{
+    /* background-color: var(--white); */
+    height: 400px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+}
+
+#eta_care div, #saatchi div{
+    /* background-color: var(--white); */
+    border-radius: 15px;
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+}
+
+div p:nth-child(2){
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#dutchbros h3{
+    margin-top: 50px;
+}
+
+#projects_html h3{
+    font-size: 24px;
+}
+
+/* Navigation and Heading Styles */
+.bio_html, footer, h2{
+    text-align: center; 
+    margin: 0 auto;
+}
+
+/* HomePage Tools Section */
+
+.tools{
+    display: grid;
+    grid-template-columns: repeat(4, 1.5fr);
+}
+
+.tools img{
+    max-width: 100%;
+    height: auto;
+}
+
+.tools img:hover{
+    rotate: 5deg;
+}
+
+/* About Section */
+.portrait{
+    background-color: var(--green);
+    width: 400px;
+    border-radius: 30px;
+    box-shadow: 10px 15px 5px var(--green);
+    rotate: 5deg;
+    margin-left: 20px;
+    border: 3px solid var(--gray);
+}
+
+.portrait:hover{
+    rotate: -5deg;
+}
+
+.sub-headings{
+    border-bottom: 10px dotted var(--orange);
+    margin: 60px;
+    padding: 30px;
+}
+
+.about-me{
+    display: grid;
+    grid-template-columns: repeat(2, 1.5fr);
+    gap: 30px;
+}
+
+.about-me h2{
+    font-family: Chalkduster, fantasy;
+}
+
+.edu{
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    margin-left: 30px;
+    text-align: center;
+}
+
+.hobbies{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    gap: 20px;
+}
+
+.hobbies h3{
+    font-size: 2.5rem;
+    font-family: Bradley Hand, cursive;
+    font-weight: bolder;
+    border: 2px solid var(--green);
+    border-radius: 15px;
+    box-shadow: 2px 4px var(--gray);
+    background-color: var(--green);
+    color: var(--white);
+
+}
+
+.hob-p:first-of-type{
+    text-align: justify;
+    font-size: 24px;
+}
+
+.hobbies img{
+    width: 350px;
+    border: 3px solid var(--green);
+    border-radius: 30px;
+    transition: .5s ease;
+}
+
+.hobbies img:hover{
+    transition: .5s ease;
+    box-shadow: 4px 8px 20px var(--gray);
+    rotate: 3deg;
+}
+
+.goal{
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    gap: 10px;
+    text-align: justify;
+    margin: 70px;
+}
+
+.group1{
+    background-color: var(--green);
+    width: 500px;
+    height: 190px;
+    border-radius: 15px;
+    color: var(--white);
+    border: 2px solid var(--gray);
+    box-shadow: 2px 4px var(--gray);
+}
+
+.group2{
+    background-color: var(--pink);
+    width: 500px;
+    height: 190px;
+    border-radius: 15px;
+    color: var(--white);
+    border: 2px solid var(--gray);
+    box-shadow: 2px 4px var(--gray);
+
+}
+
+.goal p{
+    margin: 30px;
+}
+
+/* footer */
+footer img{
+    border-radius: 15px;
+    border: 2px solid var(--gray);
+    padding: 10px;
+}
+
+/* Case Study Pages */
+.case-nav{
+    background-color: var(--green);
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    height: 325px;
+    margin-bottom: 30px;
+    border: 3px solid var(--gray);
+    box-shadow: 2px 4px 6px var(--gray);
+}
+
+.overview-title{
+    border: 3px solid var(--gray);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 30px;
+    width: 350px;
+    margin: 0 auto;
+}
+
+.project{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.pro-sol{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: justify;
+    gap: 120px;
+    margin-left: 20px;
+}
+
+.sec-line{
+    border-bottom: 2px solid rgb(151, 150, 150);
+    margin: 30px;
+    padding: 30px;
+}
+
+#toolsUsed {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    font-size: 1.2rem;
+}
+
+#toolsUsed li{
+    list-style-type: circle;
+}
+
+.wireframe{
+    display: grid;
+    grid-template-columns: 1.75fr 1fr 1fr;
+    margin: 20px;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+}
+
+.mockups{
+    display: grid;
+    grid-template-columns: repeat(4, 2.5fr);
+    margin: 20px;
+    padding: 20px;
+}
+
+.ui{
+    display: grid;
+    grid-template-columns: repeat(4, 0.5fr);
+    gap: 30px;
+    padding: 30px;
+    justify-content: end;
+    align-items: stretch;
+}
+
+.ui img{
+    border: 3px solid var(--gray);
+    border-radius: 15px;
+}

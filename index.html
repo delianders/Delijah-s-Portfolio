@@ -14,42 +14,162 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header>
+        <header id="header-index">
             <nav>
                 <ul>
                     <!--<li><a href="#top">Scroll</a></li>-->
                     <li><a href="#">home.</a></li>
-                    <li><a href="index.html#projects_html">projects.</a></li>
-                    <li><a href="about.html">about.</a></li>
+                    <li><a href="#projects_html">projects.</a></li>
+                    <li><a href="#about">about.</a></li>
                 </ul>
             </nav>
+            <section class="bio_html">
+                <div class="biohead">
+                    <h1>my name is <span>delijah.</span></h1>
+                    <p>human factors engineer | user experience</p>
+                    <p>A <span>creative</span> student that studies the integration of psychology and technology. I enjoy designing products and optimizing the user experience in a viable way.</p>
+                    <a href="mailto:delijahneanderson@gmail.com" class="button_style">EMAIL</a>
+                </div>
+            </section>
+            <div class="headerimg">
+                <img src="images/headerimg.png" alt="header">
+            </div>
         </header>
         <main>
-            <section class="bio_html">
-                <h1>my name is delijah.</h1>
-                <p>human factors engineer | user experience</p>
-                <p>A <i>creative</i> student that studies the integration of psychology and technology.<br> I enjoy designing products and optimizing the user experience in a viable way.</p>
-                <a href="mailto:delijahneanderson@gmail.com" class="button_style">Email</a>
-            </section>
-            <section class="projects_html">
-                <h2>Check out my projects below.</h2>
+
+            <section class="projects_html" id="projects_html">
+                <h2 class="head-titles">projects.</h2>
+
+                <section id="eta_care">
+                    <img src="images/etacarebanner.png" width="500" alt="eta care app">
+                    <div>
+                        <h3>ETACare App. </h3>
+                        <p><i>UX and Product Design</i></p>
+                        <p>A cross-over task management app for clients, caregivers, and physicians.</p><br>
+                        <a href="etacare.html" target="_blank" class="button_style">CASE STUDY</a>
+                    </div>
+                </section>
+
                 <section id="dutchbros">
-                    <h3>Dutch Bros.</h3>
-                    <p>UX design</p>
-                    <p>A re-design of Dutch Bros interface based on user research.</p>
-                    <a href="#" target="_blank" class="button_style">Case Study</a>
+                    <img src="images/dutchbanner.png" alt="mobile app banner" width="500">
+                    <div>
+                        <h3>Dutch Bros Re-design.</h3>
+                        <p><i>UX design & Research</i></p>
+                        <p>A re-design of Dutch Bros interface based on user research and efficiency.</p><br>
+                        <a href="#dutch.html" target="_blank" class="button_style">Coming Soon</a>
+                    </div>
                 </section>
-                <section id="food_insecurity">
-                    <h3>Food Insecurity App</h3>
-                    <p>UX design</p>
-                    <p>A mobile app for students who identify with not having food resources.</p>
-                    <a href="#" target="_blank" class="button_style">Case Study</a>
+
+                <section id="saatchi">
+                    <img src="images/projectcover.png" width="500" alt="saatchi art banner">
+                    <div>
+                        <h3>Saatchi Art. </h3>
+                        <p><i>UX and Web Development</i></p>
+                        <p>A re-deisgn of Saatchi Art that allows users to easily navigate through their website services.</p><br>
+                        <a href="https://www.behance.net/gallery/185005553/Saatchi-Art-Re-design" target="_blank" class="button_style">CASE STUDY</a>
+                    </div>
                 </section>
+
+            </section>
+
+            <section>
+                <h2 class="head-titles">tools.</h2>
+                <section class="tools">
+                    <div>
+                        <img src="https://assets.codepen.io/1351055/web_design.png" alt="an open laptop icon with a paper page and a pencil overlaying it">
+                        <h2>Figma</h2>
+                    </div>
+    
+                    <div>
+                        <img src="https://assets.codepen.io/1351055/html.png" alt="an orange document icon with triangle brackets and the letters h.t.m.l. overlaid on it">
+                        <h2>HTML</h2>
+                    </div>
+    
+                    <div>
+                        <img src="https://assets.codepen.io/1351055/css.png" alt="a blue document icon with triangle brackets and the letters c.s.s. overlaid on it">
+                        <h2>CSS</h2>
+                    </div>
+    
+                    <div>
+                        <img src="https://assets.codepen.io/1351055/java-script.png" alt="a yellow document icon with triangle brackets and the letters j.s. overlaid on it">
+                        <h2>JavaScript</h2>
+                    </div>
+                </section>
+            </section>
+
+            <section id="about">
+                <h2 class="head-titles">about.</h2>
+                <section class="about-me">
+                    <div>
+                        <h2>HELLO</h2>
+                        <p>Hi there! I'm a currently a student at Arizona State University, majoring in Human Systems Engineering with a concentration in User Experience. I’m very dedicated on the topic of importance when it comes to comprehending humans and the impact technology has on our lives.</p>
+                        <a href="files/resume.pdf" target="_blank" class="button_style">RESUME</a>
+                    </div>
+                    <img src="images/self-portrait.jpeg" alt="self-portrait" width="400" class="portrait">
+                </section>
+
+                <h2 class="sub-headings">education</h2>
+                <section class="edu">
+                    <div>
+                        <img src="images/asu.png" alt="asu logo">
+                        <h3>Arizona State University</h3>
+                        <p><i>Bachelors of Science in Human Systems Engineering</i></p>
+                        <p>Concentration in User Experience</p>
+                    </div>
+
+                    <div>
+                        <img src="images/scc.png" alt="asu logo">
+                        <h3>Scottsdale Community College</h3>
+                        <p><i>Associates in Fine Arts</i></p>
+                        <p>General Art with High Distinction</p>
+                    </div>
+                </section>
+
+                <!-- <h2 class="sub-headings">hobbies</h2>
+                <div class="hob-p">
+                    <p>What do I do when I'm not designing? One of my favorite activities to do is to discover and watch new films! I find the beauty in dissecting plots, foreign films, and admiring the cinematography.</p>
+                    <p><i>Here some of my favorite movies:</i></p>
+                </div>
+                <section class="hobbies">
+                    <div>
+                        <img src="images/american.png" alt="american beauty movie cover">
+                        <h3>American Beauty</h3>
+                    </div>
+
+                    <div>
+                        <h3>The Virgin Suicides</h3>
+                        <img src="images/virgin.png" alt="virgin suicides movie cover">
+                    </div>
+
+                    <div>
+                        <img src="images/caph.png" alt="capernaum movie cover">
+                        <h3>Capernaum</h3>
+                    </div>
+                </section> -->
+
+                <h2 class="sub-headings">goals</h2>
+                <section class="goal">
+                    <div class="group1">
+                        <p>One day, I hope to create and contribute to a more inclusive, accessible and effective system that ensures to enhance the advancement of technology and the education system. I'm very passionate for education and designing an enriched learning experience for students of all backgrounds.</p>
+                    </div>
+
+                    <div class="group2">
+                        <p>Through research and collaboration, I hope to aim for solutions to address specific problems that face the education today. These solutions can vary from learning platforms and application tools for educators. Education is the foundation of all things and I'm committed to shaping our future.</p>
+                    </div>
+                </section>
+
+                <!-- <img src="images/avocado.JPG" alt="avocado" width="400px"> -->
+
+
+
             </section>
         </main>
         <footer>
-            <a href="#" target="_blank" class="links">Email</a><br>
-            <a href="#" target="_blank" class="links">LinkedIn</a>
+            <a href="https://www.behance.net/delianders" target="_blank" class="links"><img src="images/behance.png" width="36" alt="behance logo"></a>
+
+            <a href="mailto:delijahneanderson@gmail.com" target="_blank" class="links"><img src="images/email.png" width="36" alt="email logo"></a>
+
+            <a href="https://www.linkedin.com/in/delijah-anderson-5a55bb191/" target="_blank" class="links"><img src="images/linkedin.png" width="36" alt="linkedin logo"></a>
             <p>Delijah &copy; 2023</p>
         </footer>
     </body>
