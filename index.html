@@ -1,88 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
 
-        <!--link to make responsive-->
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Delijah's Portfolio</title>
         <meta name="author" content="Delijah Anderson">
         <meta name="description" content="Delijah's personal website to showcase her work">
+        <title>Delijah's Portfolio</title>
 
-        <!--fonts-->
+         <!-- Font Awesome -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
         <!--stylesheet-->
         <link rel="stylesheet" href="styles.css">
+
     </head>
+
     <body>
         <header>
+            <div class="scroll-bar"></div>
+
             <nav>
                 <ul>
                     <li><a href="#">home.</a></li>
-                    <li><a href="#projects_html">projects.</a></li>
-                    <li><a href="files/resume.pdf" target="_blank">resume.</a></li>
+                    <li><a href="#projects">projects.</a></li>
+                    <li><a href="mailto:delijahneanderson@gmail.com" target="_blank">contact.</a>
+                    </li>
                 </ul>
             </nav>
 
-            <section class="bio_html"> 
+            <section class="bio"> 
                 <div>
-                    <h1>my name is <span class="heading-style">delijah.</span>
+                    <p><span class="hello">hello,</span></p>
+                    <h1>my name is <span class="delijah">delijah.</span>
                     </h1>
                     <p>human factors engineer | user experience</p>
-                    <p>A <span class="heading-style">creative</span> student that studies the integration of psychology and technology. I enjoy designing products and optimizing the user experience in a viable way.</p>
+                    <p>A designer who enjoys creating products and optimizing the <span class="highlight">user experience.</span> I study the integration of human impact and technology.</p>
+                    <a href="files/resume.pdf" target="_blank" class="button">resume</a>
                 </div>
-                <img src="images/self-portrait.jpeg" alt="self-portrait" width="400" class="portrait">
+                <img src="images/self-portrait.jpeg" alt="self-portrait" width="300" class="portrait">
             </section>
-
         </header>
         <main>
-
-            <section class="projects_html" id="projects_html">
+            <section class="projects">
                 <h2 class="head-titles">projects.</h2>
-
+                
                 <section id="eta_care">
-                    <img src="images/etacarebanner.png" width="500" alt="eta care app">
+                    <img src="images/etacarebanner.png" width="450" alt="eta care app">
                     <div>
-                        <h3><span class="highlight">ETACare App.</span></h3>
+                        <h3>ETACare App.</h3>
                         <p><i>UX and Product Design</i></p>
                         <p>A cross-over task management app for clients, caregivers, and physicians.</p><br>
-                        <a href="etacare.html" target="_blank" class="button_style">BEHANCE</a>
+                        <a href="etacare.html" target="_blank" class="button_style">case study <i class="fa-solid fa-arrow-right" style="color: #fdfdfd;"></i></a>
                     </div>
                 </section>
 
                 <section id="dutchbros">
-                    <img src="images/akwai.png" alt="mobile app banner" width="500">
+                    <img src="images/akwai.png" alt="mobile app banner" width="450">
                     <div>
-                        <h3><span class="highlight">Akwai Hero's League.</span></h3>
+                        <h3>Akwai Hero's League.</h3>
                         <p><i>UX Design & Research</i></p>
-                        <p>A re-design of Dutch Bros interface based on user research and efficiency.</p><br>
-                        <a href="#dutch.html" target="_blank" class="button_style">BEHANCE</a>
+                        <p>A re-design of AHL that allows users to easily navigate through their website services.</p><br>
+                        <a href="https://delijah.notion.site/Akwai-Hero-s-League-035bc019b72142b08e620246ad3957a3" target="_blank" class="button_style">case study</a>
                     </div>
                 </section>
 
                 <section>
-                    <h2 class="head-titles">other.</h2>
+                    <h2 class="head-titles">websites.</h2>
                     <div class="other-container">
                         <section id="saatchi">
-                            <img src="images/garden.png" width="500" height="400" alt="saatchi art banner">
+                            <img src="images/garden.png" width="450" height="425" alt="saatchi art banner">
                             <div>
-                                <h3><span class="highlight">Garden Story.</span></h3>
+                                <h3>Garden Story.</h3>
                                 <p><i>Web Design & Development</i></p>
-                                <p>A re-design of Saatchi Art that allows users to easily navigate through their website services.</p><br>
-                                <a href="https://delianders.github.io/GS-Final/" target="_blank" class="button_style">SITE</a>
+                                <p>A re-design of a Garden Story website. This utilizes jQuery, JSON, and a new layout design.</p><br>
+                                <a href="https://delianders.github.io/GS-Final/" target="_blank" class="button_style">site</a>
                             </div>
                         </section>
 
                         <section id="saatchi">
-                            <img src="images/saatchi.png" width="500" height="400" alt="saatchi art banner">
+                            <img src="images/short.png" width="450" height="425" alt="saatchi art banner">
                             <div>
-                                <h3><span class="highlight">Saatchi Art.</span></h3>
-                                <p><i>Web Design & Development</i></p>
-                                <p>A re-design of Saatchi Art that allows users to easily navigate through their website services.</p><br>
-                                <a href="https://delianders.github.io/GIT-Final----Saatchi-Art/" target="_blank" class="button_style">SITE</a>
+                                <h3>A Short Hike.</h3>
+                                <p><i>UX & Web Design </i></p>
+                                <p>A re-design of A Short Hike that allows users to easily navigate through their website. This allows for better intuitiveness and functionality.</p><br>
+                                <a href="https://delianders.github.io/GIT-Final----Saatchi-Art/" target="_blank" class="button_style">site</a>
                             </div>
                         </section>                       
                     </div>
-
                 </section>
             </section>
 
@@ -109,17 +114,6 @@
                         <h2>JavaScript</h2>
                     </div>
                 </section>
-            </section>
-
-            <section id="about">
-                <h2 class="head-titles">about.</h2>
-                <section class="about-me">
-                    <div>
-                        <h2>HELLO</h2>
-                        <p>Hi there! I'm a currently a student at Arizona State University, majoring in Human Systems Engineering with a concentration in User Experience. I’m very dedicated on the topic of importance when it comes to comprehending humans and the impact technology has on our lives.</p>
-                    </div>
-                </section>
-
             </section>
         </main>
         <footer>
