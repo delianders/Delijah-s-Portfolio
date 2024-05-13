@@ -63,7 +63,7 @@ body{
     width: 1280px;
     margin: 0 auto;
     background-color: var(--white);
-    background-image: url("https://www.transparenttextures.com/patterns/connected.png");
+    /* background-image: url("https://www.transparenttextures.com/patterns/connected.png"); */
 }
 
 nav,
@@ -254,7 +254,7 @@ h1{
 
 
 /* PROJECTS Section */
-#eta_care, #dutchbros{
+#eta_care, #akwai{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 60px;
@@ -265,39 +265,21 @@ h1{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-}
-
-#saatchi{
+    justify-items: center;
     text-align: center;
-}
-
-#dutchbros div{
-    /* background-color: var(--white); */
-    height: 400px;
+    margin: 0 ;
+    /* overflow-x: auto; */
     border-radius: 15px;
-    text-align: center;
     margin: 30px;
     padding: 20px;
 }
 
-#eta_care div, #saatchi div{
-    /* background-color: var(--white); */
-    border-radius: 15px;
-    text-align: center;
-    margin: 30px;
-    padding: 20px;
-}
 
 div p:nth-child(2){
     margin-top: 20px;
     margin-bottom: 40px;
 }
 
-#dutchbros h3{
-    margin-top: 50px;
-}
 
 .projects h3{
     font-size: var(--medium);
@@ -324,14 +306,14 @@ div p:nth-child(2){
     font-weight: var(--regular);
 }
 
-@keyframes rotateImage {
+/* @keyframes rotateImage {
     0% {
         transform: rotate(-15deg);
     }
     100% {
         transform: rotate(15deg);
     }
-}
+} */
 
 /* footer */
 footer img{
