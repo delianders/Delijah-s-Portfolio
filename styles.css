@@ -1,4 +1,4 @@
-/* Global Styles/ X-Small Screen Styles*/
+/* Global Styles*/
 :root{
     /* colors */
     --green: #96A289;
@@ -59,9 +59,13 @@
     to { scale: 1 1 };
 }
 
+/* menu bar */
+
+
+/* body styles */
 body{
-    width: 1280px;
-    margin: 0 auto;
+    line-height: 1.5;
+    box-sizing: border-box;
     background-color: var(--white);
     /* background-image: url("https://www.transparenttextures.com/patterns/connected.png"); */
 }
@@ -94,11 +98,10 @@ h3 ~ p i{
     font-weight: var(--regular);
 }
 
-.projects img,
+#projects img,
 .websites img{
-    border-radius: 30px;
-    border: 6px solid var(--white);
-    box-shadow: 8px 12px #c9c4c4;
+    border-radius: 15px;
+    border: 2px solid var(--black);
 }
 
 /* button style */
@@ -158,28 +161,23 @@ h3 ~ p i{
 
 /* Heading styles */
 .head-titles{
-    background-color: var(--orange);
+    /* background-color: var(--orange); */
     border-radius: 30px;
     padding: 20px;
     margin-top: 80px;
     margin-bottom: 80px;
-    width: 640px;
-    box-shadow: var(--box-shadow);
-    border: 2px solid var(--white);
     color: var(--black);
     font-weight: var(--bold);
 }
 
 /* navigation */
-nav{
-    justify-content: end;
-    padding: 20px;
-    margin: 20px;
-}
-
 nav, 
 nav ul{
     display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    
 }
 
 nav li{
@@ -193,7 +191,7 @@ nav a{
     color: var(--purple);
     text-decoration: none;
     font-weight: var(--regular);
-    font-size: var(--medium);
+    font-size: var(--para);
 }
 
 nav a:hover{
@@ -203,12 +201,12 @@ nav a:hover{
 
 /* header section - about */
 .bio{
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   align-items: center;
-   justify-items: center;
    margin: 20px;
    padding: 20px;
+   display: grid;
+   grid-template-columns: 1fr;
+   text-align: center;
+   justify-items: center;
 }
 
 .bio p:nth-child(3){
@@ -219,8 +217,8 @@ nav a:hover{
 .bio p:nth-child(4){
     font-size: var(--para);
     color: var(--black);
-    line-height: 1.75;
     padding-bottom: 10px;
+    text-align: left;
 }
 
 .hello{
@@ -243,9 +241,10 @@ h1{
 
 .portrait{
     border-radius: var(--radius);
-    box-shadow: 10px 15px 5px var(--orange);
+    box-shadow: 10px 15px 5px var(--green);
     border: 3px solid var(--black);
     rotate: 5deg;
+    margin-top: 60px;
 }
 
 .portrait:hover{
@@ -254,27 +253,16 @@ h1{
 
 
 /* PROJECTS Section */
-#eta_care, #akwai{
+#eta_care, 
+#akwai, 
+#garden,
+#short{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
     text-align: center;
     margin: 60px;
-}
-
-/* other section */
-.other-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
-    margin: 0 ;
-    /* overflow-x: auto; */
-    border-radius: 15px;
-    margin: 30px;
-    padding: 20px;
 }
 
 
@@ -288,35 +276,30 @@ div p:nth-child(2){
     font-size: var(--medium);
 }
 
-/* Tools Section */
+/* About Section */
 .tools{
-    display: grid;
-    grid-template-columns: repeat(4, 1.5fr);
-    align-items: center;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
     padding-bottom: 20px;
-    width: 1100px;
-}
-
-.tools img{
-    max-width: 100%;
-    height: auto;
-    animation: rotateImage 3s linear infinite alternate; 
+    text-align: center;
+    gap: 20px;
 }
 
 .tools h2{
     color: var(--purple);
     font-weight: var(--regular);
+    text-align: center;
 }
 
-/* @keyframes rotateImage {
-    0% {
-        transform: rotate(-15deg);
-    }
-    100% {
-        transform: rotate(15deg);
-    }
-} */
+.tooltiptext{
+    color: var(--purple);
+    font-weight: var(--bold);
+}
+
+.aboutme{
+    padding: 20px;
+    margin: 20px;
+}
 
 /* footer */
 footer img{
@@ -366,3 +349,70 @@ footer{
     opacity: 0.7;
 }
 
+/* medium Screens */
+@media screen and (min-width: 900px){
+    nav{
+        justify-content: end;
+    }
+
+    .bio{
+        margin: 60px;
+        padding: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+     }    
+
+}
+
+/* Large Screens */
+@media  screen and (min-width: 1000px){
+    .about_section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-content: center;
+    }
+
+    #eta_care, 
+    #akwai{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        margin-bottom: 20px ;
+        border-radius: 15px;
+        margin: 30px;
+        padding: 20px;
+   }
+
+  .other-container{
+    display: flex;
+    align-items: center;
+  }
+}
+    
+
+/* X-large screens */
+@media screen and (min-width: 1400px){
+
+    .other-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-content: center;
+        padding: 0;
+        margin: 0;
+      }
+
+    .aboutme{
+        background-color: var(--purple);
+        border-radius: 10% 20% 60% 40%;
+        padding: 60px;
+        width: 600px;
+    }
+
+    .tooltiptext{
+        color: var(--white);
+    }
+
+}

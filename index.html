@@ -14,19 +14,22 @@
         <!--stylesheet-->
         <link rel="stylesheet" href="styles.css">
 
+        <!-- javascript -->
+        <script src="script.js" async></script>
+
     </head>
 
     <body>
         <header>
             <div class="scroll-bar"></div>
-
             <nav>
                 <ul>
-                    <li><a href="#">home.</a></li>
+                    <li><a href="#about_section">about.</a></li>
                     <li><a href="#projects">projects.</a></li>
                     <li><a href="mailto:delijahneanderson@gmail.com" target="_blank">contact.</a>
                     </li>
                 </ul>
+                </div>
             </nav>
 
             <section class="bio"> 
@@ -35,14 +38,45 @@
                     <h1>my name is <span class="delijah">delijah.</span>
                     </h1>
                     <p>human factors engineer | user experience</p>
-                    <p>A designer who enjoys creating products and optimizing the <span class="highlight">user experience.</span> I study the integration of human impact and technology.</p>
+                    <p>A designer who enjoys creating products and optimizing the <span class="highlight">user experience.</span> I like to study the integration of human impact within technology.</p>
                     <a href="files/resume.pdf" target="_blank" class="button">resume</a>
                 </div>
                 <img src="images/self-portrait.jpeg" alt="self-portrait" width="300" class="portrait">
             </section>
         </header>
         <main>
-            <section class="projects">
+
+            <section id="about_section">
+                <h2 id="about" class="head-titles">about.</h2>
+                <div class="about_section">
+                    <div class="tools">
+                        <div>
+                            <img src="https://assets.codepen.io/1351055/web_design.png" alt="an open laptop icon with a paper page and a pencil overlaying it" width="100">
+                            <h2>Figma</h2>
+                        </div>
+        
+                        <div>
+                            <img src="https://assets.codepen.io/1351055/html.png" alt="an orange document icon with triangle brackets and the letters h.t.m.l. overlaid on it" width="100">
+                            <h2>HTML</h2>
+                        </div>
+        
+                        <div>
+                            <img src="https://assets.codepen.io/1351055/css.png" alt="a blue document icon with triangle brackets and the letters c.s.s. overlaid on it" width="100">
+                            <h2>CSS</h2>
+                        </div>
+        
+                        <div>
+                            <img src="https://assets.codepen.io/1351055/java-script.png" alt="a yellow document icon with triangle brackets and the letters j.s. overlaid on it" width="100">
+                            <h2>JavaScript</h2>
+                        </div>
+                    </div>
+    
+                    <p class="aboutme">Design is one of my favorite hobbies! Recently, I have been working on an online game called <span class="tooltiptext">plantmapp.</span> (where you build a garden and grow plants), which has pushed me to learn react, typescript, and game design. In my free time, I like reading, running and discovering new films! 
+                    </p>
+                </div>
+            </section>
+            
+            <section id="projects">
                 <h2 class="head-titles">projects.</h2>
                 
                 <section id="eta_care">
@@ -69,7 +103,7 @@
                     <h2 class="head-titles">websites.</h2>
                     <div class="other-container">
                         <section id="garden">
-                            <img src="images/garden.png" width="450" height="425" alt="saatchi art banner">
+                            <img src="images/garden.png" width="450" height="425" alt="a garden story banner">
                             <div>
                                 <h3>Garden Story.</h3>
                                 <p><i>Web Design & Development</i></p>
@@ -79,43 +113,19 @@
                         </section>
 
                         <section id="short">
-                            <img src="images/short.png" width="450" height="425" alt="saatchi art banner">
+                            <img src="images/shorthikeimageplaceholder.jpg" width="450" height="425" alt="a short hike banner">
                             <div>
                                 <h3>A Short Hike.</h3>
                                 <p><i>UX & Web Design </i></p>
                                 <p>A re-design of A Short Hike that allows users to easily navigate through their website. This allows for better intuitiveness and functionality.</p><br>
-                                <a href="https://delianders.github.io/GIT-Final----Saatchi-Art/" target="_blank" class="button_style">site</a>
+                                <a href="#" target="_blank" class="button_style">coming soon</a>
                             </div>
                         </section>                       
                     </div>
                 </section>
             </section>
-
-            <section>
-                <h2 class="head-titles">tools.</h2>
-                <section class="tools">
-                    <div>
-                        <img src="https://assets.codepen.io/1351055/web_design.png" alt="an open laptop icon with a paper page and a pencil overlaying it">
-                        <h2>Figma</h2>
-                    </div>
-    
-                    <div>
-                        <img src="https://assets.codepen.io/1351055/html.png" alt="an orange document icon with triangle brackets and the letters h.t.m.l. overlaid on it">
-                        <h2>HTML</h2>
-                    </div>
-    
-                    <div>
-                        <img src="https://assets.codepen.io/1351055/css.png" alt="a blue document icon with triangle brackets and the letters c.s.s. overlaid on it">
-                        <h2>CSS</h2>
-                    </div>
-    
-                    <div>
-                        <img src="https://assets.codepen.io/1351055/java-script.png" alt="a yellow document icon with triangle brackets and the letters j.s. overlaid on it">
-                        <h2>JavaScript</h2>
-                    </div>
-                </section>
-            </section>
         </main>
+
         <footer>
             <a href="https://www.behance.net/delianders" target="_blank" class="links"><img src="images/behance.png" width="36" alt="behance logo"></a>
 
