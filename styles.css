@@ -11,7 +11,7 @@
     /* contrast colors */
     --black: #0c0c0c;
     --gray: #757575;
-    --white: #FDFAFA;
+    --white: #FDFDFD;
 
     /* fonts */
     --font: 'Source Code Pro', monospace;
@@ -98,7 +98,17 @@ h3 ~ p i{
 #projects img,
 .websites img{
     border-radius: 15px;
-    border: 2px solid var(--black);
+    border: 5px solid var(--dk-purple);
+    padding: 5px;
+    box-shadow: 2px 3px 7px 2px var(--black);
+    cursor: pointer;
+    transition: .7s;
+}
+
+#projects img:hover,
+.websites img:hover{
+    transform: scale(0.8);
+    opacity: 0.6;
 }
 
 /* button style */
@@ -328,25 +338,25 @@ div p:nth-child(2){
 /* footer */
 footer img{
     border-radius: 15px;
-    border: 2px solid var(--gray);
+    border: 1px solid var(--black);
     padding: 10px;
+    box-shadow: 1px 2px var(--gray);
+}
+
+footer img:hover{
+    box-shadow: 2px 3px var(--gray);
 }
 
 footer{
-    padding: 60px;
+    margin-bottom: 40px;
+    padding: 40px;
 }
 
-.links {
-    text-decoration: underline;
-    padding: 1rem;
-    color: var(--green);
-    margin-top: 2rem;
-}
-
-.links:hover{
-    text-decoration: underline;
-    padding: 1rem;
-    color: var(--orange);
+footer div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+    margin: 0 auto;
 }
 
 /* highlight decoration */
@@ -371,6 +381,45 @@ footer{
     padding: 10px 3px 3px 10px;
     z-index: -1;
     opacity: 0.7;
+}
+
+/* x-small screens */
+@media  screen and (min-width: 375px ) {
+    nav{
+        display: flex;
+        margin-left: 60px;
+    }
+
+    .bio{
+        margin: 10px;
+        padding: 5px;
+        align-content: center;
+    }
+
+    .bio a{
+        text-align: center;
+    }
+
+    .portrait{
+        max-width: 100%;
+        height: auto;
+    }
+
+    #garden img,
+    #short img,
+    #akwai img,
+    #eta_care img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .tools{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 100%;
+        height: auto;
+    }
+    
 }
 
 /* medium Screens */
@@ -415,6 +464,11 @@ footer{
     display: flex;
     align-items: center;
   }
+
+    .tools{
+        display: grid;
+        grid-template-columns: repeat(4, 0.5fr);
+    }
 }
     
 
