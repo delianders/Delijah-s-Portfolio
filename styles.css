@@ -158,13 +158,17 @@ h3 ~ p i{
 
 /* Heading styles */
 .head-titles{
-    /* background-color: var(--orange); */
-    border-radius: 30px;
     padding: 20px;
     margin-top: 80px;
     margin-bottom: 80px;
     color: var(--black);
     font-weight: var(--bold);
+    border-bottom: 6px dashed var(--purple);
+    border-left: 6px solid var(--purple);
+    /* border-right: 6px dashed var(--purple); */
+    width: 150px;
+    border-bottom-left-radius: 15px;
+    /* border-bottom-right-radius: 15px; */
 }
 
 /* navigation */
@@ -238,16 +242,28 @@ h1{
 
 .portrait{
     border-radius: var(--radius);
-    box-shadow: 10px 15px 5px var(--green);
     border: 3px solid var(--black);
     rotate: 5deg;
     margin-top: 60px;
+    cursor: pointer;
+    border-radius: 30px;
 }
 
 .portrait:hover{
     rotate: -5deg;
+    filter: blur(2px);
 }
 
+.bg-portrait{
+    border-radius: 40% 30%;
+    background-color: var(--purple);
+    padding: 20px;
+    margin: 40px;
+    box-shadow: 4px 6px 5px var(--dk-purple);
+    align-items: center;
+    border: 6px solid var(--orange);
+    background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
+}
 
 /* PROJECTS Section */
 #eta_care, 
@@ -280,6 +296,17 @@ div p:nth-child(2){
     padding-bottom: 20px;
     text-align: center;
     gap: 20px;
+    cursor: pointer;
+}
+
+.tools div{
+    rotate: 1deg;
+    transition: transform .2s
+}
+
+.tools div:hover{
+    rotate: -5deg;
+    transform: scale(1.1); 
 }
 
 .tools h2{
@@ -403,14 +430,23 @@ footer{
       }
 
     .aboutme{
-        background-color: var(--purple);
+        background-color: var(--dk-purple);
         border-radius: 10% 20% 60% 40%;
         padding: 60px;
         width: 600px;
+        border: 6px solid var(--orange);
+        box-shadow: 2px 4px 3px var(--dk-purple);
+        color: var(--white);
+        cursor: pointer;
+        transition: transform .7s
     }
 
     .tooltiptext{
-        color: var(--white);
+        color: var(--orange);
+    }
+
+    .aboutme:hover{
+        transform: scale(0.9);
     }
 
 }
