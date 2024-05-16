@@ -40,6 +40,10 @@
 }
 
 /* universal */
+html {
+    scroll-behavior: smooth;
+}
+
 .scroll-bar{
     height: 20px;
     position: fixed;
