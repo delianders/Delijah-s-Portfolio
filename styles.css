@@ -101,12 +101,15 @@ h3 ~ p i{
 
 #projects img,
 .websites img{
-    border-radius: 15px;
+    /* border-radius: 15px;
     border: 5px solid var(--dk-purple);
     padding: 5px;
-    box-shadow: 2px 3px 7px 2px var(--black);
+    box-shadow: 2px 3px 7px 2px var(--black); */
     cursor: pointer;
     transition: .7s;
+
+    border-radius: 5px;
+    box-shadow: 2px 3px 7px 2px var(--gray);
 }
 
 #projects img:hover,
@@ -292,6 +295,17 @@ h1{
     margin: 60px;
 }
 
+#akwai{
+    background-color: hsl(120, 58%, 95%);
+    padding: 40px;
+    border-radius: 5%;
+}
+
+#eta_care{
+    background-color: hsl(195, 40%, 90%);
+    padding: 40px;
+    border-radius: 5%;
+}
 
 div p:nth-child(2){
     margin-top: 20px;
