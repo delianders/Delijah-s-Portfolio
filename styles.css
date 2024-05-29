@@ -65,7 +65,6 @@ html {
 
 /* body styles */
 body{
-    line-height: 1.5;
     box-sizing: border-box;
     background-color: var(--white);
     /* background-image: url("https://www.transparenttextures.com/patterns/connected.png"); */
@@ -95,8 +94,12 @@ h3{
 }
 
 h3 ~ p i{
-    color: var(--purple);
+    color: var(--dk-purple);
     font-weight: var(--regular);
+}
+
+p{
+    line-height: 1.5;
 }
 
 #projects img,
@@ -285,6 +288,7 @@ h1{
 /* PROJECTS Section */
 #eta_care, 
 #akwai, 
+#dutch,
 #garden,
 #short{
     display: grid;
@@ -302,7 +306,13 @@ h1{
 }
 
 #eta_care{
-    background-color: hsl(195, 40%, 90%);
+    /* background-color: hsl(195, 40%, 90%); */
+    padding: 40px;
+    border-radius: 5%;
+}
+
+#dutch{
+    /* background-color: hsl(255, 100%, 99%); */
     padding: 40px;
     border-radius: 5%;
 }
@@ -344,7 +354,7 @@ div p:nth-child(2){
 }
 
 .tooltiptext{
-    color: var(--purple);
+    color: var(--dk-purple);
     font-weight: var(--bold);
 }
 
@@ -425,6 +435,7 @@ footer div{
 
     #garden img,
     #short img,
+    #dutch img,
     #akwai img,
     #eta_care img{
         max-width: 100%;
@@ -436,6 +447,14 @@ footer div{
         grid-template-columns: 1fr 1fr;
         max-width: 100%;
         height: auto;
+    }
+
+    .button_style{
+        padding: 10px 12px; 
+    }
+
+    h3{
+       font-size: 1.75em;
     }
     
 }
@@ -454,6 +473,10 @@ footer div{
         text-align: left;
      }    
 
+     .button_style{
+        padding: 15px 20px;
+    }
+
 }
 
 /* Large Screens */
@@ -466,7 +489,8 @@ footer div{
     }
 
     #eta_care, 
-    #akwai{
+    #akwai, 
+    #dutch{
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
@@ -476,6 +500,10 @@ footer div{
         border-radius: 15px;
         margin: 30px;
         padding: 20px;
+   }
+
+   #akwai{
+    background-color: transparent;
    }
 
   .other-container{
@@ -501,7 +529,7 @@ footer div{
         margin: 0;
       }
 
-    .aboutme{
+    /* .aboutme{
         background-color: var(--dk-purple);
         border-radius: 10% 20% 60% 40%;
         padding: 60px;
@@ -519,6 +547,6 @@ footer div{
 
     .aboutme:hover{
         transform: scale(0.9);
-    }
+    } */
 
 }
